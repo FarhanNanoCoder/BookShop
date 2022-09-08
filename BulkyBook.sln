@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBook.Models", "BulkyBook.Models\BulkyBook.Models.csproj", "{3F760808-CFD4-4ABA-B7F6-208890EC73F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBook.Utility", "BulkyBook.Utility\BulkyBook.Utility.csproj", "{4649E312-8491-45E4-98D6-CF0D5E3B7DD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F760808-CFD4-4ABA-B7F6-208890EC73F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F760808-CFD4-4ABA-B7F6-208890EC73F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F760808-CFD4-4ABA-B7F6-208890EC73F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F760808-CFD4-4ABA-B7F6-208890EC73F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4649E312-8491-45E4-98D6-CF0D5E3B7DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4649E312-8491-45E4-98D6-CF0D5E3B7DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4649E312-8491-45E4-98D6-CF0D5E3B7DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4649E312-8491-45E4-98D6-CF0D5E3B7DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D920AFAE-610C-4843-A058-3EB1FDB3DACA}
+	EndGlobalSection
+EndGlobal

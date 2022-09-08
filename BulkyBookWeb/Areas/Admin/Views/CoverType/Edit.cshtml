@@ -1,0 +1,29 @@
+
+@model CoverType
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit category</h1>
+<br />
+@* <form method="post" asp-action="Edit"> NOT REQUIRED AS CTION IS SAME*@
+
+<form method="post" asp-action="Edit">
+
+    @* <div asp-validation-summary="All"></div> *@
+    <div class="nb-3">
+        <label asp-for="Name"></label>
+        <input  asp-for="Name" class="form-control" />
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Update</button>
+    <br />
+    <a class="btn btn-dark" asp-controller="CoverType" asp-action="Index">Go back</a>
+</form>
+
+@* MAKING VALIDATION TO RENDER IN SERVER SIDE, NO HARD REFRESH *@
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

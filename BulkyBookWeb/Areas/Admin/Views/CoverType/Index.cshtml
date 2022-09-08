@@ -1,0 +1,57 @@
+﻿@using BulkyBook.Models
+@model IEnumerable<CoverType>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="container">
+    <div class="row ">
+        <div class="col-6">
+            <h1>#Cover Type</h1>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-primary" asp-controller="CoverType" asp-action="Create">
+                 <i class="bi bi-plus-circle"></i> Create new cover type
+            </a>
+        </div>
+   </div>
+</div>
+<br />
+
+<div class="container">
+<table class="table" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td style="width:50%">
+                    @obj.Id
+                </td>
+                <td style="width:30%">
+                    @obj.Name
+                </td>
+                <td style="width:20%">
+                    <a asp-controller="CoverType" asp-action="Edit" asp-route-id="@obj.Id">Edit</a>
+                    <a asp-controller="CoverType" asp-action="Delete" asp-route-id="@obj.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+</div>

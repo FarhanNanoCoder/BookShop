@@ -1,0 +1,31 @@
+@model Category
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>#Create category</h1> 
+<br />
+<form method="post"> 
+
+    <div asp-validation-summary="All"></div>
+    <div class="nb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="nb-3">
+        <label asp-for="DisplayOrder"></label>
+        <input asp-for="DisplayOrder" class="form-control" />
+        <span class="text-danger" asp-validation-for="DisplayOrder"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Create</button>
+    <br/>
+    <a class="btn btn-dark" asp-controller="Category" asp-action="Index">Go back</a>
+</form>
+
+@* MAKING VALIDATION TO RENDER IN SERVER SIDE, NO HARD REFRESH *@
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

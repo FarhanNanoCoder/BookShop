@@ -1,0 +1,274 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+    font-family: "Poppins",sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    margin:0;
+    padding:0;
+    font-family:"Poppins" !important;
+    color:black;
+}
+*{
+    box-sizing:border-box;
+}
+p{
+    font-weight:normal;
+}
+
+label {
+    color: black;
+    font-weight: 400;
+}
+
+.txt-b {
+    color: black;
+    font-weight: 400;
+}
+
+.container{
+    width:100%;
+    padding:0 !important;
+}
+thead{
+    background-color:black;
+    color:white;
+    font-weight:500;
+    border:none;
+}
+th {
+    background-color: black !important;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+tr{
+    color:black;
+    background-color:white;
+    align-items:center;
+
+}
+td{
+    color: black;
+    font-weight: 400;
+    padding: 0.4rem 1rem !important;
+}
+tr:hover{
+    background-color:#fafafa;
+}
+.app-parent {
+    padding: 2rem 3rem !important;
+    background-color: white;
+    margin-top: 100px;
+}
+.app-nav {
+    text-transform: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    color: black !important;
+    text-decoration: none;
+    padding: 1rem 3rem!important;
+    z-index:999;
+}
+.app-nav-link{
+    text-transform:none;
+    color: black !important;
+    font-weight: 400;
+}
+.app-nav-link:hover {
+     text-transform:none;
+    font-weight: 500;
+}
+.app-button {
+    text-decoration: none;
+    background-color: black !important;
+    color: white !important;
+    border-radius: 2px;
+    padding: 0.4rem 1.5rem !important;
+}
+.app-button : hover {
+    color:white !important;
+        box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.05);
+}
+.app-button-danger {
+    text-decoration: none;
+    background-color: #EB4747 !important;
+    color: white !important;
+    border-radius: 2px;
+    padding: 0.4rem 1.5rem !important;
+}
+
+.app-button-danger : hover {
+        color: white !important;
+        box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.05);
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 1rem;
+}
+.home-grid-item {
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    font-size: 0.6rem;
+    max-width: 300px;
+    min-width: 300px;
+    align-items: flex-start;
+ 
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.05);
+}
+
+.home-grid-item:hover {
+    box-shadow: 0px 8px 44px rgba(0, 0, 0, 0.2);
+}
+.home-grid-item__body {
+    padding: 0.4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.home-grid-item__image {
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.home-grid-item__image img{
+    width:100%;
+    height:300px;
+    max-height:300px;
+    object-fit: cover;
+        border-radius: 4px;
+}
+.home-grid-item__title{
+    font-size:large;
+    font-weight: 700;
+}
+.home-grid-item__author{
+    font-size:small;
+    color:#212121;
+}
+.home-grid-item__price{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    border-radius:2px;
+    background-color:#fafafa;
+    padding:0.4rem 0.6rem;
+    margin-bottom:0.4rem;
+}
+
+.home-grid-item__details-button{
+    cursor:pointer;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid black;
+    background-color:white;
+    color:black;
+    border-radius:2px;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0);
+}
+.home-grid-item__details-button:hover {
+    transition:0.5s ease;
+     background-color:black !important;
+     color:white;
+     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.1);
+}
+.book-details-card {
+    background-color: white;
+    border:none;
+    box-sizing:border-box;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.08);
+}
+.book-details__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.book-details__author {
+    font-size: medium ;
+    font-weight: 400;
+    color: #b4b4b4;
+}
+.book-details__isbn{
+    font-size:medium;
+    font-weight:500;
+}
+.book-details__list-price {
+    font-size:large;
+    font-weight: 600;
+    text-transform:none;
+}
+.book-details__price-details-p{
+    margin-top:1rem;
+    background-color:#212121;
+    color:white;
+    font-weight:500;
+    
+}
+.book-details__price-details {
+    margin-bottom: 0.2rem;
+    background-color: #fafafa;
+    font-weight: 500;
+}
+.book-details__desc-p{
+    text-transform:none;
+    margin-top:1.5rem;
+    margin-bottom:0.4rem;
+    font-size:large;
+}
+.book-details__desc-t{
+    font-size:0.7rem !important;
+    font-weight:400 !important;
+    color:black !important;
+    
+}
+
+.cart-summary-card {
+    background-color: white;
+    border: none;
+    box-sizing:border-box;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.08);
+}
+.cart-summary-header{
+    cart-summary-header
+    box-sizing:border-box;
+    border:none;
+    color:black;
+}
+@media screen and (max-width:1100px) {
+    .home-grid {
+        grid-template-columns: repeat(3,auto)
+    }
+}
+
+@media screen and (max-width:900px) {
+    .app-parent {
+        padding: 1rem 2rem !important;
+    }
+    .home-grid {
+        grid-template-columns: repeat(2,auto)
+    }
+}
+
+@media screen and (max-width:700px) {
+    .app-parent {
+        padding: 0.7rem 1rem !important;
+    }
+    .home-grid {
+        grid-template-columns: repeat(1,auto)
+    }
+    .home-grid-item {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
